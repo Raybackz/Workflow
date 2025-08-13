@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Talent Acquisition Performance Dashboard Overview">
+    <title>Workflow</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body class="bg-light">
+    <!-- header -->
+    <header class="bg-white shadow-sm position-sticky top-0">
+        <div class="container-fluid py-2">
+            <div class="d-flex align-items-center justify-content-between">
+                <!-- Logo and Nav -->
+                <div class="d-flex align-items-center gap-4 w-20 header-logo">
+                    <a href="#" class="text-decoration-none text-reset">
+                    <div class="d-flex align-items-center">
+                        <i
+                            class="bi bi-database-fill fs-4 text-white bg-custom-purple rounded-custom-15 p-2 me-2 d-flex justify-content-center align-items-center w-50 h-50"></i>
+                        <span class="fw-bold fs-5">WorkFlow</span>
+                    </div>
+                    </a>
+                </div>
+                <nav class="d-flex gap-4 w-50 justify-content-center custom-nav-menu">
+                    <a href="#" class="nav-link text-muted p-2 py-3">Job Search</a>
+                    <a href="#" class="nav-link active p-2 py-3">Overview</a>
+                    <a href="#" class="nav-link text-muted p-2 py-3">Talent</a>
+                    <a href="#" class="nav-link text-muted p-2 py-3">Schedule</a>
+                    <a href="#" class="nav-link text-muted p-2 py-3">Event</a>
+                    <a href="#" class="nav-link text-muted p-2 py-3">History</a>
+                </nav>
+
+                <!-- Actions -->
+                <div class="d-flex align-items-center gap-3 w-30 justify-content-end header-top-actions">
+                    <button class="btn btn-sm btn-post-job">Post Job</button>
+                    <i class="bi bi-envelope fs-5 text-muted cursor-pointer"></i>
+                    <i class="bi bi-bell fs-5 text-muted cursor-pointer"></i>
+                    <div class="profile-box d-flex text-end gap-1 align-items-center cursor-pointer">
+                        <img src="./images/Profile-Avatar.jpg" class="rounded-circle avatar" alt="user" width="30"
+                            height="30" style="object-fit: cover;">
+                        <div class="profile-name">
+                            <div class="fw-semibold ellipsis">Michael Marvic</div>
+                            <small class="ellipsis">Mich***@gmail.com</small>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn p-0 border-0 bg-transparent hamburger" id="mobile-toggle">
+                    <i class="bi bi-list fs-2"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+    <div class="header-overlay"></div>
+    <!-- Main Body Wrapper -->
+    <div class="container-fluid">
+        <div class="py-4 search-name-section">
+            <div class="row align-items-center justify-content-between">
+                <!-- Welcome Text -->
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <h5 class="mb-0 fw-normal welcome-text">
+                        Welcome back, <strong>Michael Marvic</strong>!
+                    </h5>
+                </div>
+
+                <!-- Search Box -->
+                <div class="col-md-6">
+                    <div class="input-group input-group-custom cursor-pointer">
+                        <span class="input-group-text bg-white border-end-0">
+                            <i class="bi bi-search text-muted"></i>
+                        </span>
+                        <input type="text" name="Search" id="search" class="form-control border-start-0 ps-0"
+                            placeholder="Search here..." />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Cards Container -->
+        <div class="card-custom-section">
+            <div class="row g-3">
+                <!-- Left Column: Cards -->
+                <div class="w-lg-45 left-card-section">
+                    <div class="row g-3 gy-2">
+                        <!-- Card 1 -->
+                        <div class="col-6">
+                            <div class="card shadow-sm p-3 h-100 justify-content-between">
+                                <div class="d-flex justify-content-between align-items-start">
+                                    <div class="bg-light-purple rounded p-1 px-2"><i
+                                            class="bi bi-bag fs-4 text-purple"></i></div>
+                                    <i class="bi bi-three-dots text-muted cursor-pointer"></i>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-end">
+                                    <div class="col-md-5 card-inner-left">
+                                        <h5 class="mt-3 fw-bold">3.987</h5>
+                                        <p class="mb-1">Job views</p>
+                                    </div>
+                                    <div class="col-md-7 d-flex flex-column align-items-end gap-2 card-inner-right">
+                                        <div class="d-flex gap-1">
+
+                                            <span class="badge bg-light-success text-success fw-semibold">+2,6%</span>
+                                            <span class="badge p-2px-custom rounded bg-light-success text-success"><i
+                                                    class="bi bi-arrow-right arrow-right-up"></i></span>
+                                        </div>
+                                        <div class="progress w-60 bg-light-success" style="height: 4px;">
+                                            <div class="progress-bar bg-success" style="width: 50%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 2 -->
+                        <div class="col-6">
+                            <div class="card shadow-sm p-3 h-100 justify-content-between">
+                                <div class="d-flex justify-content-between align-items-start">
+                                    <div class="bg-light-purple rounded p-1 px-2"><i
+                                            class="bi bi-folder fs-4 text-purple"></i>
+                                    </div>
+                                    <i class="bi bi-three-dots text-muted cursor-pointer"></i>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-end">
+                                    <div class="col-md-5 card-inner-left">
+                                        <h5 class="mt-3 fw-bold">3.234</h5>
+                                        <p class="mb-1">Posted jobs</p>
+                                    </div>
+                                    <div class="col-md-7 d-flex flex-column align-items-end gap-2 card-inner-right">
+                                        <div class="d-flex gap-1">
+
+                                            <span class="badge bg-light-danger text-danger fw-semibold">-2,3%</span>
+                                            <span class="badge p-2px-custom rounded bg-light-danger text-danger"><i
+                                                    class="bi bi-arrow-right arrow-right-down"></i></span>
+                                        </div>
+                                        <div class="progress w-60 bg-light-danger" style="height: 4px;">
+                                            <div class="progress-bar bg-danger" style="width: 50%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 3 -->
+                        <div class="col-6">
+                            <div class="card shadow-sm p-3 h-100 justify-content-between">
+                                <div class="d-flex justify-content-between align-items-start">
+                                    <div class="bg-light-purple rounded p-1 px-2"><i
+                                            class="bi bi-envelope fs-4 text-purple"></i>
+                                    </div>
+                                    <i class="bi bi-three-dots text-muted cursor-pointer"></i>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-end">
+                                    <div class="col-md-5 card-inner-left">
+                                        <h5 class="mt-3 fw-bold">3.123</h5>
+                                        <p class="mb-1">Unread message</p>
+                                    </div>
+                                    <div class="col-md-7 d-flex flex-column align-items-end gap-2 card-inner-right">
+                                        <div class="d-flex gap-1">
+
+                                            <span class="badge bg-light-danger text-danger fw-semibold">-2,8%</span>
+                                            <span class="badge p-2px-custom rounded bg-light-danger text-danger"><i
+                                                    class="bi bi-arrow-right arrow-right-down"></i></span>
+                                        </div>
+                                        <div class="progress w-60 bg-light-danger" style="height: 4px;">
+                                            <div class="progress-bar bg-danger" style="width: 50%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 4 -->
+                        <div class="col-6">
+                            <div class="card shadow-sm p-3 h-100 justify-content-between">
+                                <div class="d-flex justify-content-between align-items-start">
+                                    <div class="bg-light-purple rounded p-1 px-2"><i
+                                            class="bi bi-people fs-4 text-purple"></i>
+                                    </div>
+                                    <i class="bi bi-three-dots text-muted cursor-pointer"></i>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-end">
+                                    <div class="col-md-5 card-inner-left">
+                                        <h5 class="mt-3 fw-bold">3.543</h5>
+                                        <p class="mb-1">Job application</p>
+                                    </div>
+                                    <div class="col-md-7 d-flex flex-column align-items-end gap-2 card-inner-right">
+                                        <div class="d-flex gap-1">
+
+                                            <span class="badge bg-light-success text-success fw-semibold">+2,6%</span>
+                                            <span class="badge p-2px-custom rounded bg-light-success text-success"><i
+                                                    class="bi bi-arrow-right arrow-right-up"></i></span>
+                                        </div>
+                                        <div class="progress w-60 bg-light-success" style="height: 4px;">
+                                            <div class="progress-bar bg-success" style="width: 50%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Bar Chart -->
+                <div class="w-lg-55 bar-chart-section">
+                    <div class="bar-chart">
+                        <div class="d-flex justify-content-between align-items-center mb-3 flex-wrap gap-4 gap-md-0">
+                            <h5 class="fw-bold mb-0 w-md-25 custom-h5">Your vacancies</h5>
+                            <div
+                                class="d-flex align-items-center justify-content-end w-md-75 gap-4 flex-wrap chart-inner-top-right">
+                                <span class="legend-label">
+                                    <span class="legend-dot" style="background-color: #4b00e0;"></span> Applications
+                                    Sent
+                                </span>
+                                <span class="legend-label">
+                                    <span class="legend-dot" style="background-color: #a58aff;"></span> Interview
+                                </span>
+                                <select class="form-select w-auto">
+                                    <option>Monthly</option>
+                                    <option>Yearly</option>
+                                    <option>Days</option>
+
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Bar Chart Rendering with Pure CSS -->
+                        <div class="d-flex gap-1 position-relative">
+                            <div class="bar-y-axis d-flex flex-column">
+                                <span class="text-muted">100</span>
+                                <span class="text-muted">80</span>
+                                <span class="text-muted">60</span>
+                                <span class="text-muted">40</span>
+                                <span class="text-muted">20</span>
+                                <span class="text-muted">0</span>
+                            </div>
+                            <div class="bar-container bar-x-axis">
+                                <!-- Mon -->
+                                <div class="bar-group">
+                                    <div class="d-flex gap-1 h-100">
+                                        <div class="bar bar1" style="height: 30%;"></div>
+                                        <div class="bar bar2" style="height: 60%;"></div>
+                                    </div>
+                                    <div class="bar-label">Mon</div>
+                                </div>
+                                <!-- Tue -->
+                                <div class="bar-group">
+                                    <div class="d-flex gap-1 h-100">
+                                        <div class="bar bar1" style="height: 40%;"></div>
+                                        <div class="bar bar2" style="height: 75%;"></div>
+                                    </div>
+                                    <div class="bar-label">Tue</div>
+                                </div>
+                                <!-- Wed -->
+                                <div class="bar-group">
+                                    <div class="d-flex gap-1 h-100">
+                                        <div class="bar bar1" style="height: 75%;"></div>
+                                        <div class="bar bar2" style="height: 28%;"></div>
+                                    </div>
+                                    <div class="bar-label">Wed</div>
+                                </div>
+                                <!-- Thu -->
+                                <div class="bar-group">
+                                    <div class="d-flex gap-1 h-100">
+                                        <div class="bar bar1" style="height: 90%;"></div>
+                                        <div class="bar bar2" style="height: 52%;"></div>
+                                    </div>
+                                    <div class="bar-label">Thu</div>
+                                </div>
+                                <!-- Fri -->
+                                <div class="bar-group">
+                                    <div class="d-flex gap-1 h-100">
+                                        <div class="bar bar1" style="height: 60%;"></div>
+                                        <div class="bar bar2" style="height: 68%;"></div>
+                                    </div>
+                                    <div class="bar-label">Fri</div>
+                                </div>
+                                <!-- Sat -->
+                                <div class="bar-group">
+                                    <div class="d-flex gap-1 h-100">
+                                        <div class="bar bar1" style="height: 85%;"></div>
+                                        <div class="bar bar2" style="height: 53%;"></div>
+                                    </div>
+                                    <div class="bar-label">Sat</div>
+                                </div>
+                                <!-- Sun -->
+                                <div class="bar-group">
+                                    <div class="d-flex gap-1 h-100">
+                                        <div class="bar bar1" style="height: 35%;"></div>
+                                        <div class="bar bar2" style="height: 70%;"></div>
+                                    </div>
+                                    <div class="bar-label">Sun</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="row g-3 py-4">
+            <!-- Table -->
+            <div class="table-left-section  w-lg-50">
+                <div class="timesheet-card shadow-sm">
+                    <div class="d-flex justify-content-between align-items-center mb-3 p-3 flex-wrap gy-2">
+                        <h5 class="mb-0 fw-semibold">Timesheet</h5>
+                        <div class="input-group input-search-table">
+                            <span class="input-group-text bg-white border-end-0 cursor-pointer">
+                                <i class="bi bi-search text-muted"></i>
+                            </span>
+                            <input type="text" name="Search" id="search" class="form-control border-start-0 ps-0"
+                                placeholder="Search name..." />
+                        </div>
+                    </div>
+
+                    <div class="table-responsive">
+                        <table class="table timesheet-table">
+                            <thead>
+                                <tr>
+                                    <th class="text-muted">Member</th>
+                                    <th class="text-muted">Hours</th>
+                                    <th class="text-muted">Rate</th>
+                                    <th class="text-muted">Amount</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Liam Carter</td>
+                                    <td class="text-muted">12 Hours</td>
+                                    <td class="text-muted">$8/h</td>
+                                    <td class="text-muted">$72</td>
+                                </tr>
+                                <tr>
+                                    <td>Emily Johansson</td>
+                                    <td class="text-muted" class="text-muted">8 Hours</td>
+                                    <td class="text-muted">$15/h</td>
+                                    <td class="text-muted">$120</td>
+                                </tr>
+                                <tr>
+                                    <td>Mateo Alvarez</td>
+                                    <td class="text-muted">5 Hours</td>
+                                    <td class="text-muted">$12/h</td>
+                                    <td class="text-muted">$60</td>
+                                </tr>
+                                <tr>
+                                    <td>Sofia Ramirez</td>
+                                    <td class="text-muted">15 Hours</td>
+                                    <td class="text-muted">$8/h</td>
+                                    <td class="text-muted">$120</td>
+                                </tr>
+                                <tr>
+                                    <td>Aisha Khan</td>
+                                    <td class="text-muted">6 Hours</td>
+                                    <td class="text-muted">$10/h</td>
+                                    <td class="text-muted">$60</td>
+                                </tr>
+                                <tr>
+                                    <td>Ethan Williams</td>
+                                    <td class="text-muted">4 Hours</td>
+                                    <td class="text-muted">$12/h</td>
+                                    <td class="text-muted">$48</td>
+                                </tr>
+                                <tr>
+                                    <td>Hana Suzuki</td>
+                                    <td class="text-muted">11 Hours</td>
+                                    <td class="text-muted">$10/h</td>
+                                    <td class="text-muted">$110</td>
+                                </tr>
+                                <tr>
+                                    <td>Amélie Dubois</td>
+                                    <td class="text-muted">4 Hours</td>
+                                    <td class="text-muted">$15/h</td>
+                                    <td class="text-muted">$60</td>
+                                </tr>
+                                <tr>
+                                    <td>Hiroshi Tanaka</td>
+                                    <td class="text-muted">4 Hours</td>
+                                    <td class="text-muted">$8/h</td>
+                                    <td class="text-muted">$32</td>
+                                </tr>
+                                <tr>
+                                    <td>Freya Andersen</td>
+                                    <td class="text-muted">8 Hours</td>
+                                    <td class="text-muted">$6/h</td>
+                                    <td class="text-muted">$48</td>
+                                </tr>
+                                <tr>
+                                    <td>Luca Moretti</td>
+                                    <td class="text-muted">6 Hours</td>
+                                    <td class="text-muted">$10/h</td>
+                                    <td class="text-muted">$60</td>
+                                </tr>
+                                <tr>
+                                    <td>Nikolai Petrov</td>
+                                    <td class="text-muted">11 Hours</td>
+                                    <td class="text-muted">$4/h</td>
+                                    <td class="text-muted">$44</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!-- Application and Interview Section -->
+            <div class="w-lg-25 d-flex flex-column application-interview">
+                <!-- Applications Card -->
+                <div class="card-custom mb-4 shadow-sm">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <h4 class="section-title mb-0">Applications</h4>
+                        <a href="#" class="view-all">View all</a>
+                    </div>
+
+                    <!-- Design Section -->
+                    <p class="mb-1 fw-semibold text-muted small">Design</p>
+                    <div class="d-flex mb-3 application-status-outer flex-wrap">
+                        <div class="flex-fill application-status">
+                            <h6>04</h6>
+                            <small>Received</small>
+                        </div>
+                        <div class="flex-fill application-status">
+                            <h6>03</h6>
+                            <small>Rejected</small>
+                        </div>
+                        <div class="flex-fill application-status">
+                            <h6>02</h6>
+                            <small>On hold</small>
+                        </div>
+                    </div>
+
+                    <!-- React Js Section -->
+                    <p class="mb-1 fw-semibold text-muted small">React Js</p>
+                    <div class="d-flex application-status-outer flex-wrap">
+                        <div class="flex-fill application-status">
+                            <h6>10</h6>
+                            <small>Received</small>
+                        </div>
+                        <div class="flex-fill application-status">
+                            <h6>08</h6>
+                            <small>Rejected</small>
+                        </div>
+                        <div class="flex-fill application-status">
+                            <h6>02</h6>
+                            <small>On hold</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Interviews Card -->
+                <div class="card-custom shadow-sm">
+                    <div class="d-flex justify-content-between align-items-center mb-3 flex-wrap">
+                        <h4 class="section-title mb-0">Interviews</h4>
+                        <i class="bi bi-three-dots text-muted cursor-pointer"></i>
+                    </div>
+
+                    <!-- Interview List -->
+                    <div class="interview-item">
+                        <div class="d-flex align-items-center">
+                            <div class="interview-avatar"><img src="./images/profile-photo-1.jpg" alt="Profile" class="rounded-circle" width="32" height="32" style="object-fit: cover;"></div>
+                            <span>Nikolai Petrov</span>
+                        </div>
+                        <span class="text-muted">13.00</span>
+                    </div>
+                    <div class="interview-item">
+                        <div class="d-flex align-items-center">
+                            <div class="interview-avatar"><img src="./images/profile-photo-2.jpg" alt="Profile" class="rounded-circle" width="32" height="32" style="object-fit: cover;"></div>
+                            <span>Ethan Williams</span>
+                        </div>
+                        <span class="text-muted">14.30</span>
+                    </div>
+                    <div class="interview-item">
+                        <div class="d-flex align-items-center">
+                            <div class="interview-avatar"><img src="./images/profile-photo-3.jpg" alt="Profile" class="rounded-circle" width="32" height="32" style="object-fit: cover;"></div>
+                            <span>Mateo Alvarez</span>
+                        </div>
+                        <span class="text-muted">16.00</span>
+                    </div>
+
+                    <!-- Add Interview Button -->
+                    <button class="add-btn mt-3">+ Add Interview</button>
+                </div>
+            </div>
+              <!-- Profile Section -->
+            <div class="w-lg-25 profile-card-outer">
+                <div class="profile-card h-100 shadow-sm">
+                    <div class="profile-card-three-dot text-end">
+                        <i class="bi bi-three-dots text-muted cursor-pointer"></i>
+                    </div>
+                    <!-- Avatar -->
+                    <div class="avatar-wrapper">
+                        <img src="./images/Profile-Avatar.jpg" class="rounded-circle avatar" alt="user" width="80" height="80">
+                    </div>
+
+                    <!-- Name & Title -->
+                    <h6 class="mb-0 fw-semibold">Michael Marvic!</h6>
+                    <p class="text-muted small mb-3">UI/UX Designer</p>
+
+                    <!-- Skill Stats -->
+                    <div class="row text-center mb-4">
+                        <div class="col">
+                            <div class="badge-circle bg-purple mb-1">40%</div>
+                            <div class="stat-label">UI Design</div>
+                        </div>
+                        <div class="col">
+                            <div class="badge-circle bg-blue mb-1">45%</div>
+                            <div class="stat-label">UX Design</div>
+                        </div>
+                        <div class="col">
+                            <div class="badge-circle bg-pink mb-1">50%</div>
+                            <div class="stat-label">Research</div>
+                        </div>
+                    </div>
+
+                    <!-- Activity Section -->
+                    <div class="text-start scrollable">
+                        <p class="fw-semibold small text-muted mb-2">Last Activities</p>
+
+                        <div class="activity-card mb-2">
+                            <i class="bi bi-briefcase-fill text-primary bg-white"></i>
+                            <span class="small">Your application has accepted in <strong>3 company</strong>.</span>
+                        </div>
+
+                        <div class="activity-card mb-2">
+                            <i class="bi bi-eye-fill text-danger bg-white"></i>
+                            <span class="small">Your profile visited by <strong>70 person</strong> this week.</span>
+                        </div>
+
+                        <div class="activity-card mb-2">
+                            <i class="bi bi-briefcase-fill text-primary bg-white"></i>
+                            <span class="small">Your application has accepted in <strong>1 company</strong>.</span>
+                        </div>
+                        <div class="activity-card">
+                            <i class="bi bi-eye-fill text-danger bg-white"></i>
+                            <span class="small">Your profile visited by <strong>50 person</strong> last week.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const toggleBtn = document.getElementById('mobile-toggle');
+        const body = document.body;
+        const icon = toggleBtn.querySelector('i');
+
+        toggleBtn.addEventListener('click', () => {
+            body.classList.toggle('mobile-menu-open');
+
+            // Toggle icon between bi-list and bi-x
+            if (icon.classList.contains('bi-list')) {
+                icon.classList.remove('bi-list');
+                icon.classList.add('bi-x');
+            } else {
+                icon.classList.remove('bi-x');
+                icon.classList.add('bi-list');
+            }
+        });
+
+    </script>
+</body>
+
+</html>
